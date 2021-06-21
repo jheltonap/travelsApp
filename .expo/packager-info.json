@@ -1,10 +1,10 @@
 {
-  "devToolsPort": 19002,
   "expoServerPort": null,
-  "packagerPort": 19000,
+  "packagerPort": null,
   "packagerPid": null,
-  "expoServerNgrokUrl": "https://2p-dkj.anonymous.mobili.exp.direct",
-  "packagerNgrokUrl": "https://packager.2p-dkj.anonymous.mobili.exp.direct",
-  "ngrokPid": 10780,
-  "webpackServerPort": null
+  "expoServerNgrokUrl": null,
+  "packagerNgrokUrl": null,
+  "ngrokPid": null,
+  "webpackServerPort": null,
+  "devToolsPort": 19002
 }
