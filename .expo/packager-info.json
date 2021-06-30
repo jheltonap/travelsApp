@@ -1,10 +1,10 @@
 {
-  "expoServerPort": null,
-  "packagerPort": null,
+  "expoServerPort": 19000,
+  "packagerPort": 19000,
   "packagerPid": null,
-  "expoServerNgrokUrl": null,
-  "packagerNgrokUrl": null,
-  "ngrokPid": null,
+  "expoServerNgrokUrl": "https://2p-dkj.jhelton.mobili.exp.direct",
+  "packagerNgrokUrl": "https://packager.2p-dkj.jhelton.mobili.exp.direct",
+  "ngrokPid": 23340,
   "webpackServerPort": null,
   "devToolsPort": 19002
 }

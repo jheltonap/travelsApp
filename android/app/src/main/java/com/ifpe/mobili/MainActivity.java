@@ -54,9 +54,4 @@ public class MainActivity extends ReactActivity {
             }
         };
     }
-
-    @Override
-      protected JSIModulePackage getJSIModulePackage() {
-        return new ReanimatedJSIModulePackage(); // <- add
-    }
 }
