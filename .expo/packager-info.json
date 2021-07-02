@@ -2,9 +2,9 @@
   "expoServerPort": 19000,
   "packagerPort": 19000,
   "packagerPid": null,
-  "expoServerNgrokUrl": "https://2p-dkj.jhelton.mobili.exp.direct",
-  "packagerNgrokUrl": "https://packager.2p-dkj.jhelton.mobili.exp.direct",
-  "ngrokPid": 29656,
+  "expoServerNgrokUrl": null,
+  "packagerNgrokUrl": null,
+  "ngrokPid": null,
   "webpackServerPort": null,
   "devToolsPort": 19002
 }

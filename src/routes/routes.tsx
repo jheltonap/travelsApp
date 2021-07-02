@@ -2,6 +2,7 @@ import React from 'react'
 import { createStackNavigator } from '@react-navigation/stack';
 import HomePage from '../pages/Home/HomePage';
 import TravelPage from '../pages/Travel/Travel';
+import AddTravel from '../pages/AddTravel/AddTravel';
 import { Screens } from './routes.screens';
 import IconNotification from '../components/IconNotification/IconNotification';
 
@@ -26,6 +27,15 @@ const Routes = () => {
                 component={TravelPage}
                 options={{
                     title: 'Viagens',
+                    headerTitleAlign: 'center',
+                }}
+            />
+            
+            <Stack.Screen
+                name={Screens.AddTravel}
+                component={AddTravel}
+                options={{
+                    title: 'Nova viagem',
                     headerTitleAlign: 'center',
                 }}
             />

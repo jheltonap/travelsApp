@@ -1,6 +1,6 @@
 import React from 'react';
 import { View } from 'react-native';
-import { useSelector, useDispatch } from 'react-redux'
+import { useSelector } from 'react-redux'
 import { State } from '../../store/ducks/types';
 import Travel from '../../domain/Travel';
 import MapView, { Marker } from 'react-native-maps';
@@ -8,7 +8,7 @@ import MapViewDirections from 'react-native-maps-directions';
 import TravelStyleSheet from './Travel.StyleSheet';
 import TravelDetails from '../../components/TravelDetails/TravelDetails';
 
-const TravelPage = () => {
+export default function TravelPage() {
     const travelSelected: Travel = useSelector<State, Travel>(state =>
         state.travel.selectedTravel);
 
@@ -50,7 +50,5 @@ const TravelPage = () => {
         </View>
     );
 }
-
-export default TravelPage;
 
 const GOOGLE_MAPS_APIKEY = '';
