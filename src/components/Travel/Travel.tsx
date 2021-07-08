@@ -64,4 +64,4 @@ export default function TravelComponent(props: Props) {
     );
 };
 
-const GOOGLE_MAPS_APIKEY = '';
+const GOOGLE_MAPS_APIKEY = 'AIzaSyAn8_C1R0cOkceR1r-VMK5XqzVU58o9Vvs';

@@ -1,67 +1,50 @@
 import { StyleSheet } from 'react-native';
 
-const AddTravelStyleSheet = StyleSheet.create({
+const TravelStyleSheet = StyleSheet.create({
     container: {
         flex: 1,
         backgroundColor: '#fff',
+        flexDirection: 'column-reverse'
     },
-    picker: {
-        width: '70%',
-        alignSelf: 'center',
+    map: {
+        height: '100%',
+        width: '100%',
     },
-
-    imagePointDestinationsView: {
-        flexDirection: 'row',
+    locationBox: {
+      backgroundColor: '#fff',
+      shadowColor: '#000',
+      shadowOffset: { width: 0, height: 0 },
+      shadowOpacity: 0.1,
+      elevation: 1,
+      borderWidth: 1,
+      borderColor: '#ddd',
+      borderRadius: 3,
+      flexDirection: 'row',
+      justifyContent: 'center',
     },
-    iconPointDestinationsView: {
-        flexDirection: 'row',
-        marginTop: 60, 
+    locationText: {
+        fontSize: 12,
+        color: '#333',
+        marginTop: 14,
+        marginHorizontal: 10,
+        textAlign: 'center',
+        width: 120,
     },
-    imagePointDestinations: {
-        height: 24,
-        width: 24,
-        marginRight: 10,
-        top: 4
+    locationTimeBox: {
+        backgroundColor: '#2F9E41',
+        padding: 10,
+        textAlign: 'center',
     },
-    lineDashed: {
-        height: 80,
-        borderRadius: 1,
-        width: 1,
-        borderStyle: 'dashed',
-        borderWidth: 1,
-        marginLeft: 10,
-        borderColor: 'rgba(161,155,183,1)',
+    locationTimeText: {
+        color: '#fff',
+        fontSize: 12,
+        textAlign: 'center',
     },
+    locationTimeTextSmall: {
+        color: '#fff',
+        fontSize: 10,
+        textAlign: 'center',
+    }
 });
 
-const PickerSelectStyles = StyleSheet.create({
-    inputIOS: {
-        paddingVertical: 12,
-        paddingHorizontal: 10,
-        borderWidth: 1,
-        borderColor: 'gray',
-        borderRadius: 4,
-        color: 'black',
-        paddingRight: 30, // to ensure the text is never behind the icon
-    },
-    inputAndroid: {
-        fontSize: 24,
-        fontWeight: 'bold',
-        marginTop: 20,
-        marginBottom: 10,
-        paddingVertical: 20,
-        paddingLeft: 10,
-        borderWidth: 1,
-        borderColor: 'gray',
-        borderRadius: 10,
-        color: '#000',
-        paddingRight: 30, // to ensure the text is never behind the icon
-    },
-    iconContainer: {
-        top: '35%',
-        right: 12,
-
-    },
-});
-
-export { AddTravelStyleSheet, PickerSelectStyles };
+export default TravelStyleSheet;

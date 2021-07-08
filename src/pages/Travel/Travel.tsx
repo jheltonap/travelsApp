@@ -7,6 +7,7 @@ import MapView, { Marker } from 'react-native-maps';
 import MapViewDirections from 'react-native-maps-directions';
 import TravelStyleSheet from './Travel.StyleSheet';
 import TravelDetails from '../../components/TravelDetails/TravelDetails';
+import { getPixelSize } from '../../utils';
 
 export default function TravelPage() {
     const travelSelected: Travel = useSelector<State, Travel>(state =>
@@ -43,7 +44,16 @@ export default function TravelPage() {
                     apikey={GOOGLE_MAPS_APIKEY}
                     strokeWidth={3}
                     strokeColor="#2F9E41"
-                    onReady={result => mapView?.fitToCoordinates(result.coordinates)}
+                    onReady={result => mapView?.fitToCoordinates(result.coordinates, {
+                        edgePadding: 
+                        { 
+                            top: getPixelSize(20), 
+                            right: getPixelSize(20), 
+                            bottom: getPixelSize(120), 
+                            left: getPixelSize(20) 
+                        },
+                        animated: true,
+                    })}
                 />
             </MapView>
             <TravelDetails />    
@@ -51,4 +61,4 @@ export default function TravelPage() {
     );
 }
 
-const GOOGLE_MAPS_APIKEY = '';
+const GOOGLE_MAPS_APIKEY = 'AIzaSyAn8_C1R0cOkceR1r-VMK5XqzVU58o9Vvs';

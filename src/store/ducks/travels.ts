@@ -165,6 +165,7 @@ const INITIAL_STATE: TravelState = {
     }
 };
 
+
 const add: Reducer<TravelState> = (state = INITIAL_STATE, action) => ({
     ...state,
     data: [...state.data, action.travel]
